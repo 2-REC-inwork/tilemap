@@ -1,0 +1,16 @@
+﻿<Window x:Class="TileMan.Dialogs.DialogResizeTiles"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="DialogResizeTiles" Height="auto" Width="auto" ResizeMode="NoResize" SizeToContent="WidthAndHeight">
+    <UniformGrid>
+        <Label Name="LabelTileWidth">Tile Width :</Label>
+        <TextBox Name="TextBoxTileWidth" IsEnabled="False" Text="{Binding ElementName=SliderTileWidth,Path=Value}"/>
+        <Slider Name="SliderTileWidth" Minimum="1" Maximum="1024" SmallChange="1" LargeChange="10" TickFrequency="1" IsSnapToTickEnabled="True"/>
+        <Label Name="LabelTileHeight">Tile Height :</Label>
+        <TextBox Name="TextBoxTileHeight" IsEnabled="False" Text="{Binding ElementName=SliderTileHeight,Path=Value}"/>
+        <Slider Name="SliderTileHeight" Minimum="1" Maximum="1024" SmallChange="1" LargeChange="10" TickFrequency="1" IsSnapToTickEnabled="True"/>
+        <Label></Label>
+        <Button Name="ButtonOK" IsDefault="True" Click="ButtonOK_Click">OK</Button>
+        <Button Name="ButtonCancel" IsCancel="True">Cancel</Button>
+    </UniformGrid>
+</Window>

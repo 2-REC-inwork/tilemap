@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Objects>
+
+  <!--
+    <Category type="CATEGORY">
+      <Object
+        id="-1"
+        name="name"
+        icon="icon.png"
+        description="description"
+      />
+    </Category>
+  -->
+
+  <Category type="PLAYER">
+    <Object
+      id="0"
+      name="Player"
+      icon="object_player.png"
+      description="Player"
+    />
+  </Category>
+
+  <Category type="COLLECTABLE">
+    <Object
+      id="1"
+      name="Coin"
+      icon="object_coin.png"
+      description="Coin"
+    />
+    <Object
+      id="2"
+      name="Life"
+      icon="object_life.png"
+      description="Extra Life"
+    />
+    <Object
+      id="3"
+      name="Speed Up"
+      icon="object_speedup.png"
+      description="Extra Speed - player acts faster"
+    />
+  </Category>
+  
+  <Category type="CHARACTER">
+    <Object
+      id="10"
+      name="Dead Kyle"
+      icon="object_kyle_dead.png"
+      description="Dead Kyle ..."
+    />
+    <!--
+    <Object
+      id="11"
+      name="Evil Kabocha"
+      icon="object_kabocha.png"
+      description="Evil Kabocha ..."
+    />
+    -->
+  </Category>
+  
+  <Category type="AI">
+    <Object
+      id="16"
+      name="BRobot"
+      icon="object_brobot.png"
+      description="BRobot"
+    />
+  </Category>
+  
+  <Category type="OBJECT">
+    <Object
+      id="32"
+      name="Red Door"
+      icon="object_door_red.png"
+      description="Red Door"
+    />
+    <Object
+      id="35"
+      name="Red Button"
+      icon="object_button_red.png"
+      description="Red Button"
+    />
+  </Category>
+  
+  <Category type="EFFECTS">
+    <!--
+    <Object
+      id="48"
+      name="Dust"
+      icon="object_dust.png"
+      description="Dust"
+    />
+    -->
+    <!--
+    <Object
+      id="49"
+      name="Small Explosion"
+      icon="object_explosion_small.png"
+      description="Small Explosion"
+    />
+    <Object
+      id="50"
+      name="Large Explosion"
+      icon="object_explosion_large.png"
+      description="Large Explosion"
+    />
+    -->
+    <Object
+      id="51"
+      name="Giant Explosion"
+      icon="object_explosion_giant.png"
+      description="Giant Explosion"
+    />
+  </Category>
+  
+  <Category type="SPECIAL">
+    <!--
+    <Object
+      id="55"
+      name="Animation"
+      icon="object_animation_player.png"
+      description="Animation ..."
+    />
+    -->
+    <!--
+    <Object
+      id="56"
+      name="Camera Bias"
+      icon="object_camera_bias.png"
+      description="Camera Bias"
+    />
+    <Object
+      id="57"
+      name="Framerate Watcher"
+      icon="object_framerate_watcher.png"
+      description="Framerate Watcher"
+    />
+    <Object
+      id="58"
+      name="Infinite Spawner"
+      icon="spawner.png"
+      description="Infinite Spawner"
+    />
+    -->
+  </Category>
+  
+  <Category type="PROJECTILE">
+    <!--
+    <Object
+      id="60"
+      name="Harpoon"
+      icon="object_harpoon.png"
+      description="Harpoon"
+    />
+    <Object
+      id="61"
+      name="Harpoon Head"
+      icon="object_harpoon_head.png"
+      description="Harpoon Head"
+    />
+    -->
+  </Category>
+
+</Objects>

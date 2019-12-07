@@ -1,0 +1,16 @@
+﻿<Window x:Class="TileMan.Dialogs.DialogSpeeds"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="DialogSpeeds" Height="auto" Width="auto" ResizeMode="NoResize" SizeToContent="WidthAndHeight">
+    <UniformGrid>
+        <Label Name="LabelSpeedX">Speed X :</Label>
+        <TextBox Name="TextBoxSpeedX" IsEnabled="False" Text="{Binding ElementName=SliderSpeedX,Path=Value}"/>
+        <Slider Name="SliderSpeedX" Minimum="-10.0" Maximum="10.0" SmallChange="0.1" LargeChange="1.0" TickFrequency="0.1" IsSnapToTickEnabled="True"/>
+        <Label Name="LabelSpeedY">Speed Y :</Label>
+        <TextBox Name="TextBoxSpeedY" IsEnabled="False" Text="{Binding ElementName=SliderSpeedY,Path=Value}"/>
+        <Slider Name="SliderSpeedY" Minimum="-10.0" Maximum="10.0" SmallChange="0.1" LargeChange="1.0" TickFrequency="0.1" IsSnapToTickEnabled="True"/>
+        <Label></Label>
+        <Button Name="ButtonOK" IsDefault="True" Click="ButtonOK_Click">OK</Button>
+        <Button Name="ButtonCancel" IsCancel="True">Cancel</Button>
+    </UniformGrid>
+</Window>

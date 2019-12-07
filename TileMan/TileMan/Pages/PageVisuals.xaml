@@ -1,0 +1,108 @@
+﻿<UserControl x:Class="TileMan.Pages.PageVisuals"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    VerticalAlignment="stretch" HorizontalAlignment="Stretch" Height="auto" Width="auto">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+        <GroupBox Name="GroupBoxPageVisualLayers" Header="Visual Layers Settings" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Height="auto" Width="auto" Margin="5,5,0,5">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <ScrollViewer Name="ScrollViewerLayers" Grid.RowSpan="5" CanContentScroll="True" VerticalScrollBarVisibility="Auto" MaxHeight="150">
+                    <ListBox Name="ListBoxLayers" Grid.ColumnSpan="2" Grid.RowSpan="5" SelectionChanged="ListBoxLayers_SelectionChanged"/>
+                </ScrollViewer>
+                <Button Name="ButtonMoveUp" Grid.Column="1" Click="ButtonMoveUp_Click">Move Up</Button>
+                <Button Name="ButtonMoveDown" Grid.Row="1" Grid.Column="1" Click="ButtonMoveDown_Click">Move Down</Button>
+                <Button Name="ButtonAdd" Grid.Row="2" Grid.Column="1" Click="ButtonAdd_Click">Add</Button>
+                <Button Name="ButtonCopy" Grid.Row="3" Grid.Column="1" Click="ButtonCopy_Click">Copy</Button>
+                <Button Name="ButtonRemove" Grid.Row="4" Grid.Column="1" Click="ButtonRemove_Click">Remove</Button>
+            </Grid>
+        </GroupBox>
+        <GroupBox Name="GroupBoxPageVisualLayer" Header="Layer Settings" Grid.Row="1" Margin="5,0,0,5">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Label>Layer :</Label>
+                <Button Name="ButtonLoadLayer" Grid.Column="1" Click="ButtonLoadLayer_Click">Load</Button>
+                <Button Name="ButtonExportLayer" Grid.Column="2" Click="ButtonExportLayer_Click">Export</Button>
+                <Button Name="ButtonClearLayer" Grid.Column="3" Click="ButtonClearLayer_Click">Clear</Button>
+                <Label Grid.Row="1">Name :</Label>
+                <TextBox Name="TextBoxName" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" IsEnabled="False" Focusable="False" IsTabStop="False" />
+                <Label Grid.Row="2" Grid.ColumnSpan="2">Nb Tiles H :</Label>
+                <TextBox Name="TextBoxNbTilesH" Grid.Row="2" Grid.Column="2" IsEnabled="False" IsTabStop="False" Focusable="False" />
+                <Label Grid.Row="3" Grid.ColumnSpan="2">Nb Tiles V :</Label>
+                <TextBox Name="TextBoxNbTilesV" Grid.Row="3" Grid.Column="2" IsEnabled="False" Focusable="False" IsTabStop="False" />
+                <Button Name="ButtonResizeMap" Grid.Row="2" Grid.Column="3" Click="ButtonResizeMap_Click">Resize</Button>
+                <Separator Grid.Row="4" Grid.ColumnSpan="4"/>
+                <Label Grid.Row="5" Grid.ColumnSpan="2">Tiles Width :</Label>
+                <TextBox Name="TextBoxTilesWidth" Grid.Row="5" Grid.Column="2" IsEnabled="False" Focusable="False" IsTabStop="False"/>
+                <Label Grid.Row="6" Grid.ColumnSpan="2">Tiles Height :</Label>
+                <TextBox Name="TextBoxTilesHeight" Grid.Row="6" Grid.Column="2" IsEnabled="False" Focusable="False" IsTabStop="False"/>
+                <Button Name="ButtonResizeTiles" Grid.Row="5" Grid.Column="3" Click="ButtonResizeTiles_Click">Resize</Button>
+                <Label Grid.Row="7" Grid.ColumnSpan="2">Size Factor X :</Label>
+                <TextBox Name="TextBoxSizeFactorX" Grid.Row="7" Grid.Column="2" IsEnabled="False" IsTabStop="False" Focusable="False" />
+                <Label Grid.Row="8" Grid.ColumnSpan="2">Size Factor Y :</Label>
+                <TextBox Name="TextBoxSizeFactorY" Grid.Row="8" Grid.Column="2" IsEnabled="False" Focusable="False" IsTabStop="False" />
+                <Button Name="ButtonSetSizeFactors" Grid.Row="7" Grid.Column="3" Click="ButtonSetSizeFactors_Click">Change</Button>
+                <Label Grid.Row="9" Grid.ColumnSpan="2">Speed X :</Label>
+                <TextBox Name="TextBoxSpeedX" Grid.Row="9" Grid.Column="2" IsEnabled="False" IsTabStop="False" Focusable="False" />
+                <Label Grid.Row="10" Grid.ColumnSpan="2">Speed Y :</Label>
+                <TextBox Name="TextBoxSpeedY" Grid.Row="10" Grid.Column="2" IsEnabled="False" Focusable="False" IsTabStop="False" />
+                <Button Name="ButtonSetSpeeds" Grid.Row="9" Grid.Column="3" Click="ButtonSetSpeeds_Click">Change</Button>
+            </Grid>
+        </GroupBox>
+        <GroupBox Name="GroupBoxTileMap" Header="Tiles" Grid.Row="2" Margin="5,0,0,5">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="20" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+                <Label>Tile Map :</Label>
+                <TextBox Name="TextTileMap" Grid.Column="1" Grid.ColumnSpan="2" Background="LightGray" FlowDirection="RightToLeft" IsTabStop="False" IsReadOnly="True" />
+                <Button Name="ButtonTileMap" Grid.Column="3" Click="ButtonTileMap_Click">
+                    <Image Name="ImageBtnTileMap" Stretch="Fill" Source="/TileMan;component/Images/folder.png"/>
+                </Button>
+                <ScrollViewer Name="ScrollViewerTiles" Grid.Row="1" Grid.ColumnSpan="4" Margin="0,5,0,0" CanContentScroll="True" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" MaxHeight="150">
+                    <UniformGrid Name="UniformGridTiles" Background="LightGray">
+                    </UniformGrid>
+                </ScrollViewer>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</UserControl>

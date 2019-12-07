@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="TileMan.Pages.BackgroundImageRatio"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="auto" Width="auto">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+        <Label Grid.Row="2">Ratio :</Label>
+        <TextBox Name="TextBoxRatio" Grid.Row="2" Grid.Column="1" IsEnabled="False"/>
+        <Label>Width :</Label>
+        <TextBox Name="TextBoxWidth" Grid.Column="1" IsEnabled="False" Text="{Binding ElementName=SliderWidth,Path=Value}"/>
+        <Slider Name="SliderWidth" Grid.Column="2" Value="1" Minimum="1" Maximum="1920" SmallChange="1" LargeChange="10" TickFrequency="1" IsSnapToTickEnabled="True" ValueChanged="SliderWidth_ValueChanged"/>
+        <Label Grid.Row="1">Height :</Label>
+        <TextBox Name="TextBoxHeight" Grid.Row="1" Grid.Column="1" IsEnabled="False" Text="{Binding ElementName=SliderHeight,Path=Value}"/>
+        <Slider Name="SliderHeight" Grid.Row="1" Grid.Column="2" Value="1" Minimum="1" Maximum="1920" SmallChange="1" LargeChange="10" TickFrequency="1" IsSnapToTickEnabled="True" ValueChanged="SliderHeight_ValueChanged"/>
+        <Label Grid.Row="3">Keep :</Label>
+        <RadioButton Name="RadioButtonWidth" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" IsChecked="True" Checked="RadioButtonWidth_Checked">width</RadioButton>
+        <RadioButton Name="RadioButtonHeight" Grid.Row="3" Grid.Column="2" VerticalAlignment="Center" Checked="RadioButtonHeight_Checked">height</RadioButton>
+        <Label Grid.Row="4">Factor :</Label>
+        <TextBox Name="TextSizeFactor" Grid.Row="4" Grid.Column="1" IsEnabled="False" Text="{Binding ElementName=SliderSizeFactor,Path=Value}"/>
+        <Slider Name="SliderSizeFactor" Grid.Row="4" Grid.Column="2" Value="1" Minimum="1" ValueChanged="SliderSizeFactor_ValueChanged" TickFrequency="0.1" IsSnapToTickEnabled="True" LargeChange="0.1"/>
+    </Grid>
+</UserControl>

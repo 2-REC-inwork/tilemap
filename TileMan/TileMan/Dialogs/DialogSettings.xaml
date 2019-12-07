@@ -1,0 +1,15 @@
+﻿<Window x:Class="TileMan.Dialogs.DialogSettings"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Settings" Height="300" Width="300">
+    <StackPanel>
+        <Label>default nb tiles H ...</Label>
+        <Label>default nb tiles V ...</Label>
+        <Label>default tile width ...</Label>
+        <Label>default tile height ...</Label>
+        <Label>tilemap background color ...</Label>
+        <Label>tilemap tiles sizes ...</Label>
+        <Label>objects description file ...</Label>
+        <Label>hotspots description file ...</Label>
+    </StackPanel>
+</Window>

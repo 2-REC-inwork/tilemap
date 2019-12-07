@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Objects>
+
+  <!--
+    <Category type="CATEGORY">
+      <Object
+        id="-1"
+        name="name"
+        icon="icon.png"
+        description="description"
+      />
+    </Category>
+  -->
+
+  <Category type="MOVEMENT">
+    <Object
+      id="0"
+      name="GO_RIGHT"
+      icon="hotspot_mvt_right.png"
+      description="Go right"
+    />
+    <Object
+      id="1"
+      name="GO_LEFT"
+      icon="hotspot_mvt_left.png"
+      description="Go left"
+    />
+    <Object
+      id="2"
+      name="GO_UP"
+      icon="hotspot_mvt_up.png"
+      description="Go up"
+    />
+    <Object
+      id="3"
+      name="GO_DOWN"
+      icon="hotspot_mvt_down.png"
+      description="Go down"
+    />
+    <Object
+      id="4"
+      name="GO_UP_RIGHT"
+      icon="hotspot_mvt_up_right.png"
+      description="Go up and right"
+    />
+    <Object
+      id="5"
+      name="GO_UP_LEFT"
+      icon="hotspot_mvt_up_left.png"
+      description="Go up and left"
+    />
+    <Object
+      id="6"
+      name="GO_DOWN_LEFT"
+      icon="hotspot_mvt_down_left.png"
+      description="Go down and left"
+    />
+    <Object
+      id="7"
+      name="GO_DOWN_RIGHT"
+      icon="hotspot_mvt_down_right.png"
+      description="Go down and right"
+    />
+    <Object
+      id="8"
+      name="GO_TOWARDS_PLAYER"
+      icon="hotspot_mvt_to_player.png"
+      description="Go towards player"
+    />
+    <Object
+      id="9"
+      name="GO_RANDOM"
+      icon="hotspot_mvt_random.png"
+      description="Go to a random direction ..."
+    />
+  </Category>
+
+  <Category type="WAIT">
+    <Object
+      id="10"
+      name="WAIT_SHORT"
+      icon="hotspot_wait_short.png"
+      description="Wait for a short time"
+    />
+    <Object
+      id="11"
+      name="WAIT_MEDIUM"
+      icon="hotspot_wait_medium.png"
+      description="Wait for a medium time"
+    />
+    <Object
+      id="12"
+      name="WAIT_LONG"
+      icon="hotspot_wait_long.png"
+      description="Wait for a long time"
+    />
+  </Category>
+
+  <Category type="ACTION">
+    <Object
+      id="13"
+      name="ATTACK"
+      icon="hotspot_action_attack.png"
+      description="Attack the player"
+    />
+    <Object
+      id="14"
+      name="TALK"
+      icon="hotspot_action_talk.png"
+      description="Talk"
+    />
+    <Object
+      id="15"
+      name="DIE"
+      icon="hotspot_action_die.png"
+      description="Die"
+    />
+    <Object
+      id="16"
+      name="WALK_AND_TALK"
+      icon="hotspot_action_walk_talk.png"
+      description="Walk and Talk"
+    />
+    <Object
+      id="17"
+      name="TAKE_CAMERA_FOCUS"
+      icon="hotspot_action_camera_take.png"
+      description="Take camera focus"
+    />
+    <Object
+      id="18"
+      name="RELEASE_CAMERA_FOCUS"
+      icon="hotspot_action_camera_release.png"
+      description="Release camera focus"
+    />
+    <Object
+      id="19"
+      name="END_LEVEL"
+      icon="hotspot_action_end_level.png"
+      description="End current level"
+    />
+    <Object
+      id="20"
+      name="GAME_EVENT"
+      icon="hotspot_action_game_event.png"
+      description="Trigger a game event"
+    />
+  </Category>
+
+  <Category type="ANIMATION">
+    <Object
+      id="50"
+      name="PLAY_ANIMATION"
+      icon="hotspot_animation.png"
+      description="Play an animation"
+    />
+  </Category>
+
+  <Category type="NPC_ACTION">
+    <Object
+      id="21"
+      name="NPC_RUN_QUEUED_COMMANDS"
+      icon="hotspot_npc_run_queue.png"
+      description="Run queued commands"
+    />
+    <Object
+      id="22"
+      name="NPC_GO_RIGHT"
+      icon="hotspot_npc_right.png"
+      description="Go right"
+    />
+    <Object
+      id="23"
+      name="NPC_GO_LEFT"
+      icon="hotspot_npc_left.png"
+      description="Go left"
+    />
+    <Object
+      id="24"
+      name="NPC_GO_UP"
+      icon="hotspot_npc_up.png"
+      description="Go up"
+    />
+    <Object
+      id="25"
+      name="NPC_GO_DOWN"
+      icon="hotspot_npc_down.png"
+      description="Go down"
+    />
+    <Object
+      id="26"
+      name="NPC_GO_UP_RIGHT"
+      icon="hotspot_npc_up_right.png"
+      description="Go up right"
+    />
+    <Object
+      id="27"
+      name="NPC_GO_UP_LEFT"
+      icon="hotspot_npc_up_left.png"
+      description="Go up left"
+    />
+    <Object
+      id="28"
+      name="NPC_GO_DOWN_LEFT"
+      icon="hotspot_npc_down_left.png"
+      description="Go down left"
+    />
+    <Object
+      id="29"
+      name="NPC_GO_DOWN_RIGHT"
+      icon="hotspot_npc_down_right.png"
+      description="Go down right"
+    />
+    <Object
+      id="30"
+      name="NPC_GO_TOWARDS_PLAYER"
+      icon="hotspot_npc_to_player.png"
+      description="Go towards player"
+    />
+    <Object
+      id="31"
+      name="NPC_GO_RANDOM"
+      icon="hotspot_npc_random.png"
+      description="Go to a random direction"
+    />
+    <Object
+      id="32"
+      name="NPC_GO_UP_FROM_GROUND"
+      icon="hotspot_npc_up_ground.png"
+      description="Go up from ground"
+    />
+    <Object
+      id="33"
+      name="NPC_GO_DOWN_FROM_CEILING"
+      icon="hotspot_npc_down_ceiling.png"
+      description="Go down from ceiling"
+    />
+    <Object
+      id="34"
+      name="NPC_STOP"
+      icon="hotspot_npc_stop.png"
+      description="Stop"
+    />
+    <Object
+      id="35"
+      name="NPC_SLOW"
+      icon="hotspot_npc_slow.png"
+      description="Slow down"
+    />
+  </Category>
+
+  <Category type="NPC_DIALOG">
+    <Object
+      id="100"
+      name="NPC_SELECT_DIALOG"
+      icon="hotspot_npc_dialog.png"
+      description="Dialog ..."
+    />
+  </Category>
+
+</Objects>

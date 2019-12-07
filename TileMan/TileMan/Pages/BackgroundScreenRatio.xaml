@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="TileMan.Pages.BackgroundScreenRatio"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="auto" Width="auto">
+    <Grid Height="auto" Width="auto">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+        <Label Name="LabelSizeFactorX">Size Factor X :</Label>
+        <TextBox Name="TextBoxSizeFactorX" Grid.Column="1" IsEnabled="False" Text="{Binding ElementName=SliderSizeFactorX,Path=Value}" />
+        <Slider Name="SliderSizeFactorX" Grid.Column="2" Minimum="1" Value="1" ValueChanged="SliderSizeFactorX_ValueChanged" TickFrequency="0.1" IsSnapToTickEnabled="True" LargeChange="1"/>
+        <Label Name="LabelSizeFactorY" Grid.Row="1">Size Factor Y :</Label>
+        <TextBox Name="TextBoxSizeFactorY" Grid.Row="1" Grid.Column="1" IsEnabled="False" Text="{Binding ElementName=SliderSizeFactorY,Path=Value}"/>
+        <Slider Name="SliderSizeFactorY" Grid.Row="1" Grid.Column="2" Minimum="1" Value="1" ValueChanged="SliderSizeFactorY_ValueChanged" TickFrequency="0.1" IsSnapToTickEnabled="True" LargeChange="1"/>
+    </Grid>
+</UserControl>

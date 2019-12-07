@@ -1,0 +1,16 @@
+﻿<Window x:Class="TileMan.Dialogs.DialogSizeFactors"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="DialogSizeFactors" Height="auto" Width="auto" ResizeMode="NoResize" SizeToContent="WidthAndHeight">
+    <UniformGrid>
+        <Label Name="LabelSizeFactorX">Size Factor X :</Label>
+        <TextBox Name="TextBoxSizeFactorX" IsEnabled="False" Text="{Binding ElementName=SliderSizeFactorX,Path=Value}"/>
+        <Slider Name="SliderSizeFactorX" Minimum="0.1" Maximum="10.0" SmallChange="0.1" LargeChange="1.0" TickFrequency="0.1" IsSnapToTickEnabled="True"/>
+        <Label Name="LabelSizeFactorY">Size Factor Y :</Label>
+        <TextBox Name="TextBoxSizeFactorY" IsEnabled="False" Text="{Binding ElementName=SliderSizeFactorY,Path=Value}"/>
+        <Slider Name="SliderSizeFactorY" Minimum="0.1" Maximum="10.0" SmallChange="0.1" LargeChange="1.0" TickFrequency="0.1" IsSnapToTickEnabled="True"/>
+        <Label></Label>
+        <Button Name="ButtonOK" IsDefault="True" Click="ButtonOK_Click">OK</Button>
+        <Button Name="ButtonCancel" IsCancel="True">Cancel</Button>
+    </UniformGrid>
+</Window>

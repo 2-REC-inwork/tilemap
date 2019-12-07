@@ -1,0 +1,58 @@
+﻿<UserControl x:Class="TileMan.Pages.PageCollision"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Height="auto" Width="auto">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+        <GroupBox Header="Main" Margin="5,5,0,5">
+            <CheckBox Name="CheckBoxAsMain" Checked="CheckBoxAsMain_Checked" Unchecked="CheckBoxAsMain_Unchecked">same as main layer</CheckBox>
+        </GroupBox>
+        <GroupBox Name="GroupBoxPageCollision" Header="Collision Layer Settings" Grid.Row="1" Margin="5,0,0,5">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Label>Layer :</Label>
+                <Button Name="ButtonLoadLayer" Grid.Column="1" Click="ButtonLoadLayer_Click">Load</Button>
+                <Button Name="ButtonExportLayer" Grid.Column="2" Click="ButtonExportLayer_Click">Export</Button>
+                <Button Name="ButtonClearLayer" Grid.Column="3" Click="ButtonClearLayer_Click">Clear</Button>
+                <Label Grid.Row="1">Name :</Label>
+                <TextBox Name="TextBoxName" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" IsEnabled="False" Focusable="False" IsTabStop="False" />
+            </Grid>
+        </GroupBox>
+        <GroupBox Name="GroupBoxTileMap" Header="Tiles" Grid.Row="2" Margin="5,0,0,5">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="20" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+                <Label>Tile Map :</Label>
+                <TextBox Name="TextTileMap" Grid.Column="1" Grid.ColumnSpan="2" Background="LightGray" FlowDirection="RightToLeft" IsTabStop="False" IsReadOnly="True" />
+                <Button Name="ButtonTileMap" Grid.Column="3" Click="ButtonTileMap_Click">
+                    <Image Name="ImageBtnTileMap" Stretch="Fill" Source="/TileMan;component/Images/folder.png"/>
+                </Button>
+                <ScrollViewer Name="ScrollViewerTiles" Grid.Row="1" Grid.ColumnSpan="4" Margin="0,5,0,0" CanContentScroll="True" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" MaxHeight="150">
+                    <UniformGrid Name="UniformGridTiles" Background="LightGray">
+                    </UniformGrid>
+                </ScrollViewer>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</UserControl>

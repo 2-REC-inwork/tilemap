@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Objects>
+
+  <!--
+    <Category type="CATEGORY">
+      <Object
+        id="-1"
+        name="name"
+        icon="icon.png"
+        description="description"
+      />
+    </Category>
+  -->
+
+  <Category type="PLAYER">
+    <Object
+      id="0"
+      name="Player"
+      icon="object_player.png"
+      description="Player"
+    />
+  </Category>
+
+  <Category type="COLLECTABLE">
+    <Object
+      id="1"
+      name="Coin"
+      icon="object_coin.png"
+      description="Coin"
+    />
+    <Object
+      id="2"
+      name="Life"
+      icon="object_life.png"
+      description="Extra Life"
+    />
+    <Object
+      id="3"
+      name="Speed Up"
+      icon="object_speedup.png"
+      description="Extra Speed - player acts faster"
+    />
+  </Category>
+
+</Objects>
